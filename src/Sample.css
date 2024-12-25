@@ -1,0 +1,65 @@
+abbr {
+  text-decoration: none;
+}
+.react-calendar {
+  margin: 0 auto;
+}
+.react-calendar__navigation {
+  border-bottom: 2px solid rgb(230, 230, 230);
+}
+.react-calendar__navigation__prev2-button {
+  visibility: hidden;
+}
+.react-calendar__navigation__next2-button {
+  visibility: hidden;
+}
+.react-calendar__month-view__days__day.saturday {
+  /*토요일*/
+  color: #000ed1;
+}
+.react-calendar__month-view__weekdays__weekday--weekend abbr[title="토요일"] {
+  color: #000ed1;
+}
+.react-calendar__month-view__days__day.sunday {
+  /*일요일*/
+  color: #d10000;
+}
+.react-calendar__month-view__weekdays__weekday abbr[title="일요일"] {
+  color: #d10000;
+}
+.react-calendar__month-view__days__day.holiday {
+  /*쉬는 날*/
+  color: #d10000;
+}
+
+.react-calendar__month-view__days__day--neighboringMonth {
+  /*해당 월이 아닌 다른 월의 날일 때 회색으로 표시*/
+  color: #757575 !important;
+}
+.react-calendar__month-view__days__day--weekend {
+  /*주말일 때 색 강제 변경 해제*/
+  color: #000000;
+}
+.react-calendar__month-view__days__day abbr {
+  /*기존 ~~일 이라 나오던 abbr 제거 ex) 25일 -> X*/
+  display: none;
+}
+.react-calendar__month-view {
+  /*캘린더의 margin 조절*/
+  margin: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid rgb(230, 230, 230);
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  /*요일 목록 부분*/
+  border: 1px solid rgb(230, 230, 230);
+  background-color: rgb(240, 240, 240);
+}
+
+.react-calendar__tile {
+  /*각각의 요일*/
+  border: 1px solid rgb(230, 230, 230) !important;
+  box-sizing: border-box;
+  text-align: center;
+}
